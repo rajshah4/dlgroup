@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title</title>
+    <meta charset="utf-8">
+    <link href="slides-resources/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+name: inverse
+layout: true
+class: center, middle, inverse
+---
+### Deep Learning Group
+#Convolutional Neural Networks
+
+.footnote[Slides available on GitHub: [github.com/rajshah4/dlgroup](https://github.com/rajshah4/dlgroup)]
+---
+layout: false
+background-image: url(slides-resources/keras-logo.jpg)
+
+.left-column[
+## Goals
+]
+.right-column[
+<br/><br/><br/>
+1. Build a simple convolutional neural network
+
+2. Augment data
+
+3. Use a pretrained convolutional neural network
+
+4. Use transfer learning (fine tuning a pretrained network)
+]
+---
+layout: false
+
+.left-column[
+## Docker
+]
+
+.right-column[
+<img src="https://www.docker.com/sites/default/files/moby.svg" style="width: 60%"/>  
+
+- ### Software containerization
+
+- ### The tangled web of python dependencies
+
+- ### Provides a quick start for running projects
+]
+---
+template: inverse
+# Background : 
+# What is the big deal?
+---
+layout: false
+
+.left-column[
+## History of Image Classification
+]
+
+.right-column[
+
+<img src="https://kaggle2.blob.core.windows.net/competitions/kaggle/3362/media/woof_meow.jpg" style="width: 60%"/>  
+
+- ### Tough problem classifying images
+
+- ### In 2013, the state of the art was 82.7% accuracy 
+
+- ### Convolutional neural networks can achieve > 99% 
+]
+
+---
+
+.left-column[
+## Deep Learning Methodology
+]
+
+.right-column[
+- ### Theano
+
+- ### Caffee
+
+- ### Torch (Facebook/Twitter)
+
+- ### Tensorflow
+]
+---
+template: inverse
+# Build a Simple Convolutional Network
+---
+.left-column[
+## Imagenet
+]
+.right-column[
+
+
+<img src="http://img1.cache.netease.com/catchpic/3/3B/3B3537A8867C42B271119DF5EAFF1CE1.jpg" style="width: 60%"/>  
+
+
+- ### Large database of images - 138 GB, 14 million images
+
+- ### Foundation of research and competitions
+
+- ### Inception-v3 takes two weeks with 8 NVIDIA Tesla K40s 
+]
+---
+
+template: inverse
+# Augmenting Data
+---
+.left-column[
+## Overfitting
+]
+.right-column[
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Overfitting.svg/300px-Overfitting.svg.png" style="width: 50%"/>  
+
+- ### Classic parable of identifying tanks concealed in a forest
+
+- ### Example of an elephant detector
+]
+
+---
+template: inverse
+# Using a Pre-trained Network
+---
+
+.left-column[
+## Pre-Trained Networks
+]
+.right-column[
+
+<img src="https://culurciello.github.io/assets/nets/acc_vs_net_vs_ops.svg" style="width: 50%"/>  
+
+- ### Alexnet to ResNet
+
+- ### Squeezenet
+
+- ### Feature extraction
+]
+---
+template: inverse
+# Fine Tuning a Pre-trained network
+---
+.left-column[
+## For Next Time
+]
+.right-column[
+
+- ### Try different data (more classes)
+
+- ### Try different learning rates, optimizer
+
+- ### Effect of augmented data
+
+- ### Try another pre-trained network
+]
+---
+
+template: inverse
+# Thanks !
+
+<br/>
+For further discussion use the `d-l-group` on Slack :
+[https://d-l-group.slack.com/x-104640284119-103886075395/signup](https://d-l-group.slack.com/x-104640284119-103886075395/signup)
+
+<br/>
+
+Slides available on GitHub:  
+https://github.com/rajshah4/dlgroup
+
+
+    </textarea>
+    <script src="slides-resources/remark-latest.min.js">
+    </script>
+    <script>
+      var slideshow = remark.create(
+      {ratio:'16:9'}
+        );
+    </script>
+  </body>
+</html>
